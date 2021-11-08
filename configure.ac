@@ -21,11 +21,11 @@ AC_LANG_PUSH([C++])
 PKG_CHECK_MODULES([OMNIORB], [omniORB4 >= 4.1.0])
 PKG_CHECK_MODULES([OSSIE], [ossie >= 2.1.0])
 
-PKG_CHECK_MODULES([JTRS], [jtrsInterfaces])
-AC_CHECK_PYMODULE(redhawk.jtrsInterfaces, [], [AC_MSG_ERROR([the python redhawk.jtrsInterfaces module is required])])
+#PKG_CHECK_MODULES([JTRS], [jtrsInterfaces])
+#AC_CHECK_PYMODULE(redhawk.jtrsInterfaces, [], [AC_MSG_ERROR([the python redhawk.jtrsInterfaces module is required])])
 
-PKG_CHECK_MODULES([PACKET], [packetInterfaces])
-AC_CHECK_PYMODULE(redhawk.packetInterfaces, [], [AC_MSG_ERROR([the python redhawk.packetInterfaces module is required])])
+#PKG_CHECK_MODULES([PACKET], [packetInterfaces])
+#AC_CHECK_PYMODULE(redhawk.packetInterfaces, [], [AC_MSG_ERROR([the python redhawk.packetInterfaces module is required])])
 
 # Optionally include java support
 AC_ARG_ENABLE([java], AS_HELP_STRING([--disable-java], [Disable framework java support]))
